@@ -1,12 +1,274 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Cursos, diplomados, consultorías en Java, PHP, bases de datos y programación general.">
+    
+    <title>3CT Centro de Capacitación y Consultoría Tecnológica</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/styles3CT.css">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+
 </head>
-<body>
-    <h1>Welcome to github pages 3CT</h1>
+<body id="index">
+    
+    <section class="inner" id="topBar">
+
+        <!-- barra superior con logo y navegación -->
+
+            <div>
+                <img src="pic/logo-3ct.svg" alt="logo 3CT consultoría" id="logo3CT">
+
+                <p>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-phone"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </p>
+
+            </div>
+
+            <nav class="ddmenu">               
+                <div class="ddgroup">
+                    Capacitación
+                    <div class="ddsub">
+                        <a href="#">Cursos</a>
+                        <a href="#">Diplomados</a>
+                    </div>
+                </div>
+                <div class="ddgroup">
+                    Consultoría
+                    <div class="ddsub">
+                        <a href="#">Para empresas</a>
+                        <a href="#">Para personas</a>
+                    </div>              
+                </div>
+                <div class="ddgroup">
+                    Financiamiento
+                    <div class="ddsub">
+                        <a href="#">Promociones</a>
+                        <a href="#">Descuentos</a>
+                        <a href="#">Paga Cero</a>
+                    </div>
+                </div>
+                <div class="ddgroup">
+                    Empleos
+                    <div class="ddsub">
+                        <a href="#">Bolsa de trabajo</a>
+                        <a href="#">Contrata programadores</a>
+                    </div>
+                </div>
+                <a href="#">
+                    Contacto
+                </a>
+              </nav>
+
+    </section>
+
+    <!-- sección de cabecera con eslogan -->
+
+
+    <div class="bgB1">
+        <section class="inner" id="indxHdr">
+            <header>
+                <h1>Aprende a programar y hackea tu futuro</h1>
+            </header>
+        </section>
+    </div>
+
+    <!-- beneficios de estudiar en 3CT -->
+
+    <section class="inner blue" id="indxBloc01">
+
+        <h2>Aprender la programación en 3CT</h2>
+
+        <div class="renglon">
+            <div>
+                <h3>APOYO</h3>
+                <p>Nuestro objetivo es ayudarte a desarrollar tu carrera. Te ayudamos con financiar tu capacitación, elegir los cursos adecuados y conseguir empleo después de terminarlos.</p>
+                <a href="#" class="btn">Arma tu plan de estudios</a>
+            </div>
+            <div>
+                <h3>MÉTODO</h3>
+                <p>Nuestros cursos se imparten siempre en vivo, con un instructor dispuesto a prestar la asistencia personalizada a los alumnos en el tiempo real y resolver todas las dudas.</p>
+                <a href="#" class="btn">Ve clase demo</a>
+            </div>
+            <div>
+                <h3>EXPERIENCIA</h3>
+                <p>Formamos programadores profesionales desde hace más de 20 años. De nuestras aulas salieron muchas generaciones de profesionistas que trabajan en varias empresas tanto en México como en el extranjero.</p>
+                <a href="#" class="btn">Escucha testimonios</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- separador decorativo -->
+
+    <div class="sep1">
+        &nbsp;
+    </div>
+
+    <!-- ventajas de la capacitación en 3CT -->
+
+    <section class="inner red" id="indxBloc02">
+
+        <h2>Ventajas de la capacitación en 3CT</h2>
+
+        <div class="renglon">
+            <div>
+                <h3>PAGOS FLEXIBLES</h3>
+                <p>Tenemos diferentes facilidades para que tu curso sea lo más accesible. Promociones de temprada, meses sin intereses hasta un plan totalmente gratuito PAGA CERO. </p>
+                <a href="#" class="btn">Elige tu plan de pagos</a>
+            </div>
+            <div>
+                <h3>CONSULTORÍAS</h3>
+                <p>Dependiendo de tu objetivos y preferencias, podrás elegir a estudiar un curso individual o en un grupo con otros alumnos. Por si necesitas soluciones personalizadas puedes solicitar una consultoría.</p>
+                <a href="#" class="btn">Agenda una sesión</a>
+            </div>
+            <div>
+                <h3>HORARIOS CÓMODOS</h3>
+                <p>Los cursos en línea ofrecidos por 3CT se imparten en diferentes horarios al trascurso del día, desde mañana hasta la noches, inclusive los fines de semana. Podrás estudiar cuando te conviene.</p>
+                <a href="#" class="btn">Consulta los horarios</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- banner de promoción -->
+
+    <div class="bgB2">
+        <section class="inner" id="indxBanner">
+            <h2>Atractivas formas de pago</h2>
+            <p>Aquí viene un incentivo para explorar varias opciones de pago: descuentos, MSI, PAGA CERO etc. </p>
+        </section>
+    </div>
+
+    <!-- opciones de empleo -->
+
+    <section class="inner blue" id="indxBloc03">
+
+        <h2>Empleo de programadores y personal TI</h2>
+
+        <div class="renglon">
+            <div id="rotador">
+                <p>aquí vienen los logos</p>
+            </div>
+
+            <div>
+                <h3>OFERTA LABORAL</h3>
+                <p>Tenemos buen conocimiento del mercado laboral de TI en México y conectamos a progamadores talentosos con empresas que necesitan llenar un puesto vacante. Si buscas empleo o empleados, podemos ayudarte.</p>
+                <a href="#" class="btn">Revisa opciones</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- anuncios -->
+
+    <section class="inner" id="indxAnuncios">
+
+        <div id="anuncio1">
+            <h2>DIPLOMADO FULL STACK</h2>
+            <p>aquí viene una foto, detalles, botón etc.</p>
+        </div>
+
+        <div id="anuncio2">
+            <h2>¡APROVECHA BUEN FIN!</h2>
+            <p>aquí viene una foto, detalles, botón etc.</p>
+        </div>
+
+    </section>
+
+    <!-- instructores -->
+
+    <section class="inner blue" id="indxInstructores">
+
+        <h2>Conoce nuestros instructores</h2>
+
+        <div class="renglon">
+            <div>
+                <p><img src="pic/instructor-jorge.png" alt="instructor jorge"></p>
+                <h3>JORGE</h3>
+                <p>Experto en Java con más de 25 años de experiencia de diseño, análisis y desarrollo de sistemas a nivel corporativo e internacional.</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <div>
+                <p><img src="pic/instructor-eduardo.png" alt="instructor eduardo"></p>
+                <h3>EDUARDO</h3>
+                <p>Desarrollador de software para plataformas móviles y administrador de infraestructura con  10 años de experiencia en Android y iOS.</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <div>
+                <p><img src="pic/instructor-juan.png" alt="instructor juan"></p>
+                <h3>JUAN</h3>
+                <p>Ingeniero en Inteligencia de Negocios con 15 años de experiencia en desarrollo de  bases de datos Oracle, SQL y MongoDB.</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <p class="centrar"><a href="#" class="btn">CONOCE TODOS LOS INSTRUCTORES DE 3CT</a></p>
+
+    </section>
+
+    <!-- catálogo de cursos -->
+
+    <div class="bgD1">
+        <section class="inner" id="catalogo">
+            <h2>Cursos, diplomados y consultorías personalizadas</h2>
+
+            <div class="renglon">
+                <div>
+                    <h3>DIPLOMADOS</h3>
+                    <ul>
+                        <li>Base de Datos</li>
+                        <li>Desarrollo web Full Stack MEAN +Python</li>
+                        <li>Full Stack Java, Python y MongoDB</li>
+                        <li>Framework JEE</li>
+                        <li>C# .NET</li>
+                        <li>Cracking the Code Interview</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CURSOS</h3>
+                    <ul>
+                        <li>Docker y Kuberentes</li>
+                        <li>Performance and Tuning de SQL Server.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONSULTORÍAS</h3>
+                    <ul>
+                        <li>Fundamentos de programación (Python)</li>
+                        <li>HTML y CSS</li>
+                        <li>Fundamentos de Java</li>
+                        <li>JSF JavaServer Faces</li>
+                        <li>Introducción al lenguaje C#</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- footer -->
+
+    <div class="bgR1">
+        <section class="inner" id="footer">
+            <footer>
+             <a href="#">Acerca de 3CT</a> // <a href="#">Aviso de privacidad</a> // <a href="#">Contacto</a>
+        
+            </footer>
+        </section>
+    </div>
+
 </body>
-</html>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpbh'},{'server':'a2plvcpnl163508'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>

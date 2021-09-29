@@ -1,0 +1,280 @@
+/* 3CT | hojas de estilos principal */
+
+/* reseteo y redefiniciÃ³n de los elementos HTML */ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: all 1s ease;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* clases generales */
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.sep1 {
+  width: 100%;
+  height: 1em;
+  margin: 2em 0 0 0;
+  background: repeating-linear-gradient(-45deg,#B4D2E7,#B4D2E7 10px,#fff 10px,#fff 20px);
+}
+.bgB1 {
+  background-color: #1A659E;
+}
+.bgB2 {
+  background-color: #B4D2E7;
+}
+.bgD1 {
+  background-color: #110B11;
+}
+.bgR1 {
+  background-color: #A30B37;
+} 
+a.btn {
+  display: block;
+  padding: .5em .75em;
+  margin: 2em 0;
+  width: max-content;
+}
+.centrar {
+  width: min-content;
+  margin: auto;
+}
+section div.renglon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section div.renglon a.btn {
+  display: inline-flex;
+}
+
+/* barra superior */
+
+#topBar {
+  padding: 1em 0;
+}
+#topBar i {
+  color: #B4D2E7;
+  font-size: 2em;
+}
+#logo3CT {
+  max-width: 145px;
+  padding: 0 0 .5em 0;
+}
+
+/* navegaciÃ³n principal */
+.ddmenu { 
+  display: flex; 
+}
+.ddmenu a, .ddmenu .ddgroup {
+  width: 100%;
+  padding: 1em 2.5em 1em 1em;
+  color: #1A659E;
+  background: #fff;
+}
+.ddmenu a:hover, .ddmenu .ddgroup:hover {
+  color: #B4D2E7;
+  background: #1A659E;
+  cursor: pointer;
+}
+.ddmenu .ddgroup { 
+  position: relative; 
+}
+.ddsub {
+  width: 100%;
+  position: absolute;
+  top: 100%; left: 0;
+  display: none;
+}
+.ddsub a { 
+  display: block; 
+  box-sizing: border-box;
+  font-size: .8em;
+  padding: 1.5em .25em;
+}
+.ddgroup:hover .ddsub { 
+  display: block; 
+}
+.ddgroup::after {
+  content: "\27A4";
+  position: absolute;
+  top: .8em; right: .6em;
+  transition: transform 0.2s;
+}
+.ddgroup:hover::after {
+  transform: rotate(90deg);
+}
+
+/* estilos particulares de index */
+
+#index section.inner {
+  padding: 1em .25em;
+  text-align: center;
+}
+#index #indxHdr {
+  color: #fff;
+  padding: 10em 0;
+  margin: 2em auto;
+}
+#index section.blue h2, #index section.blue h3 {
+  color: #1A659E;
+}
+#index section.blue a.btn {
+  background-color: #1A659E;
+  color: #fff;
+}
+#index section.blue a.btn:hover {
+  background-color: #A30B37;
+}
+#index section.red h2, #index section.red h3 {
+  color: #A30B37;
+}
+#index section.red a.btn {
+  background-color: #A30B37;
+  color: #fff;
+}
+#index section.red a.btn:hover {
+  background-color: #1A659E;
+}
+#index section h2 {
+  font-size: 2.4em;
+  margin: 2em 0;
+}
+#index section div.renglon div {
+  padding: 1em 2em;
+}
+#index section div.renglon div h3 {
+  font-weight: 600;
+}
+#index section div.renglon div p {
+  text-align: left;
+  line-height: 1.8;
+  margin: 1em 0;
+}
+#index section#indxBanner {
+  padding: 1em 1em 4em 1em;
+}
+#index #rotador {
+  background-color: #eee;
+} 
+#index #indxAnuncios {
+  text-align: center;
+}
+#index #indxAnuncios div {
+  padding: 4em;
+  margin: .5em;
+}
+#anuncio1 {
+  background-color: #1A659E;
+  color: #fff;
+}
+#anuncio2 {
+  background-color: #B4D2E7;
+  color: #1A659E;
+}
+#index #indxInstructores div.renglon div {
+  box-shadow: 0 0 10px 3px #eee;
+  background-color: #B4D2E7;
+  padding: 2em 1em;
+}
+#index #indxInstructores div.renglon div p {
+  text-align: center;
+}
+#index #indxInstructores div.renglon div img {
+  border: .5em solid white;
+  border-radius: 50%;
+}
+#index #catalogo {
+  color: #fff;
+  padding: 2em 0 4em 0;
+}
+#index section#catalogo h2 {
+  margin: 1em 0;
+}
+#index section#catalogo div h3 {
+  color: #A30B37;
+}
+#index #catalogo div li {
+  margin: .5em 0;
+}
+#footer a {
+  color: #fff;
+}
+#footer a:hover {
+  color:#110B11;
+}
+
+
+
+/* ----------
+
+MEDIA QUERIES  
+
+---------- */
+
+
+/* navegaciÃ³n principal para celulares TEMP */
+
+  @media screen and (max-width: 640px) {
+    .ddmenu { 
+      flex-wrap: wrap; 
+    }
+    .ddsub {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+
+/* pantallas grandes */
+
+  @media screen and (min-width: 960px) {
+    #topBar {
+      display: flex;
+      justify-content: space-around;
+    }
+    section div.renglon {
+      flex-direction: row;
+    }
+    #rotador {
+      padding: 4em;
+      min-width: 640px;
+    }
+    #indxAnuncios {
+      display: flex;
+    }
+    #indxInstructores div.renglon {
+      justify-content: space-around;
+    }
+    #indxInstructores div.renglon div {
+      max-width: 30%;
+    }
+    #index #catalogo div.renglon {
+      justify-content: space-around;
+    }
+    #index #catalogo div.renglon.div {
+      max-width: 30%;
+    }
+  }

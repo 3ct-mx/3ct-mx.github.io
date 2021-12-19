@@ -1,0 +1,505 @@
+/* 3CT | hoja de estilos principal */
+
+/* reseteo y redefiniciÃ³n de los elementos HTML */ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: all 1s ease;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* clases generales */
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.sep1 {
+  width: 100%;
+  height: 1em;
+  margin: 2em 0 0 0;
+  background: repeating-linear-gradient(-45deg,#B4D2E7,#B4D2E7 10px,#fff 10px,#fff 20px);
+}
+.bgB1 {
+  background-color: #1A659E;
+}
+.bgB2 {
+  background-color: #B4D2E7;
+}
+.bgD1 {
+  background-color: #110B11;
+}
+.bgR1 {
+  background-color: #A30B37;
+} 
+a.btn {
+  display: block;
+  padding: .5em .75em;
+  margin: 2em 0;
+  width: max-content;
+}
+.centrar {
+  width: min-content;
+  margin: auto;
+}
+section div.renglon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section div.renglon a.btn {
+  display: inline-flex;
+}
+
+/* barra superior */
+
+#topBar {
+  padding: 1em 0;
+}
+#redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;    
+}
+#redes li {
+  color: #fff;
+  padding: 0 .5em;
+  margin: 1em 0;
+}
+#redes li i {
+  padding: 0 .25em 0 0;
+}
+#redes li a {
+  color: #B4D2E7;
+}
+#redes li a:hover {
+  color: #fff;
+}
+#logo3CT {
+  max-width: 145px;
+  padding: 1em 0 .5em 0;
+}
+
+/* navegaciÃ³n principal */
+.ddmenu { 
+  display: flex; 
+}
+.ddmenu a, .ddmenu .ddgroup {
+  width: 100%;
+  padding: 1em 2.5em 1em 1em;
+  color: #1A659E;
+  background: #fff;
+}
+.ddmenu a:hover, .ddmenu .ddgroup:hover {
+  color: #B4D2E7;
+  background: #1A659E;
+  cursor: pointer;
+}
+.ddmenu .ddgroup { 
+  position: relative; 
+}
+.ddsub {
+  width: 100%;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  display: none;
+}
+.ddsub a { 
+  display: block; 
+  box-sizing: border-box;
+  font-size: .8em;
+  padding: 1.5em .25em;
+}
+.ddgroup:hover .ddsub { 
+  display: block; 
+}
+.ddgroup::after {
+  content: "\27A4";
+  position: absolute;
+  top: .8em; right: .6em;
+  transition: transform 0.2s;
+}
+.ddgroup:hover::after {
+  transform: rotate(90deg);
+}
+
+/* estilos particulares de index */
+
+section.inner {
+  padding: 1em .25em;
+  text-align: center;
+}
+#index #indxHdr {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 2em auto;
+  background-image: url(../pic/mainHdrBckgr.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+#index #indxHdr h1 {
+  max-width: 60%;
+  margin: 2em 0 1em 10px;
+  font-size: 3.2em;
+}
+#index #indxHdr p {
+  margin: 1em 0 .25em 10px;
+  font-size: 1.6em;
+  color:#B4D2E7;
+}
+#index #indxHdr p span {
+  font-weight: 600;
+  color: #fff;
+}
+#index section.blue h2, #index section.blue h3 {
+  color: #1A659E;
+}
+#index section.blue a.btn {
+  background-color: #1A659E;
+  color: #fff;
+}
+#index section.blue a.btn:hover {
+  background-color: #A30B37;
+  box-shadow: 0 0 10px #ccc;
+}
+#index section.red h2, #index section.red h3 {
+  color: #A30B37;
+}
+#index section.red a.btn {
+  background-color: #A30B37;
+  color: #fff;
+}
+#index section.red a.btn:hover {
+  background-color: #1A659E;
+  box-shadow: 0 0 10px #ccc;
+}
+section h2 {
+  font-size: 2.4em;
+  margin: 2em 0;
+}
+section div.renglon div {
+  padding: 1em 2em;
+}
+img.icono {
+  max-width: 80px;
+  padding: 0 0 2em 0;
+}
+section div.renglon div h3 {
+  font-weight: 600;
+}
+section div.renglon div p {
+  line-height: 1.8;
+  margin: 1em 0;
+}
+div.bgPago {
+  background-color: #B4D2E7;
+  background-image: url(../pic/bckgr-pagos.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#index section#indxBanner {
+  color: #fff;
+}
+#index section#indxBanner h2 {
+  font-weight: 600;
+}
+.bannerTexto {
+ font-size: 1.4em;
+ margin: 2em;
+ padding: 1em;
+ line-height: 1.8;
+ background-color: rgba(17,17,17,.5); 
+}
+.bannerTexto a {
+  display: inline-block;
+  padding: 0 .15em;
+  background-color: #1A659E;
+  color: #fff;
+}
+.bannerEslogan {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 2em;
+  color: #1A659E;
+}
+#index #ytpromo {
+  padding: 1em 0 4em 0;
+}
+#index #ytpromo h2 {
+  color: #1A659E;
+}
+#index #ytpromo iframe {
+  width: 100%;
+  height: 315px;
+}
+#index #ytpromo p {
+  padding: 1em;
+  line-height: 1.6;
+}
+#index #ytpromo p a {
+  color: #1A659E;
+}
+#index #ytpromo p a:hover {
+  color: #A30B37;
+}
+#index #indxInstructores div.renglon div {
+  box-shadow: 0 0 10px 3px #eee;
+  background-color: #B4D2E7;
+  padding: 2em 1em;
+}
+#index div.renglon div.logotipos div {
+  padding: 0;
+  margin: 1em;
+}
+#index #indxInstructores div.renglon div p {
+  text-align: center;
+}
+#index #indxInstructores div.renglon div img {
+  border: .5em solid white;
+  border-radius: 50%;
+}
+#catalogo {
+  color: #fff;
+  padding: 2em 0 4em 0;
+}
+section#catalogo h2 {
+  margin: 1em 0;
+}
+section#catalogo div h3 {
+  color: #A30B37;
+}
+#catalogo div {
+  text-align: left;
+}
+#catalogo div li {
+  margin: .5em 0;
+  list-style-type: disc;
+  color:#B4D2E7;
+}
+#catalogo div li a {
+  color: #B4D2E7;
+}
+#catalogo div li a:hover {
+  color: #A30B37;
+}
+#footer {
+  text-align: center;
+
+}
+#footer a {
+  color: #fff;
+}
+#footer a:hover {
+  color:#110B11;
+}
+
+/* plantilla cursos y diplomados */
+
+.cursoHdr {
+  padding: 4em 1em;
+  color: #fff;
+  font-size: 150%;
+}
+main#curso {
+  padding: 1em 2em 4em 2em;
+}
+#curso a.btn {
+  background-color: #1A659E;
+  color: #fff;
+}
+#curso a.btn:hover {
+  background-color: #A30B37;
+}
+#curso h2 {
+  font-size: 2.4em;
+  margin: 2em 0 .25em 0;
+  color: #1A659E;
+}
+#curso h3 {
+  color: #A30B37;
+  text-transform: uppercase; 
+  margin: 2em 0 .25em 0;
+}
+#curso p, #curso li, #curso dt, #curso dd {
+  line-height: 2;
+  font-size: 1.2em;
+  color: #444;
+  font-weight: 400;
+}
+#curso p strong {
+  color: #1A659E;
+  font-weight: 600;;
+}
+#curso ul li {
+  list-style-type: square;
+  margin: 0 0 0 1em;
+}
+#curso ol li {
+  margin: 0 0 0 1em;
+}
+#curso dt {
+  color: #1A659E;
+  margin: 1em 0 0 0;
+}
+#curso dt, #curso dd {
+  padding: 0 2em;
+}
+
+/* anuncios */
+
+#anuncios {
+  text-align: center;
+}
+#anuncios div {
+  padding: 1em;
+  margin: .5em;
+}
+#anuncios div h2 {
+  margin: 0;
+  padding: 1em;
+  font-weight: 600;
+}
+#anuncios div a.btn {
+  display: inline-flex;
+  background-color: #fff;
+  color: #1A659E;
+}
+#anuncios div a.btn:hover {
+  background-color: #B4D2E7;
+}
+#anuncio1 {
+  background-color: #1A659E;
+  background-image: url(../pic/bckgr-code.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#anuncio1 p {
+  margin: 0 0 1em 0;
+}
+#anuncio1 p.destacado {
+  background-color: rgba(17,17,17,.5);
+  padding: 1em;
+  font-weight: 600;
+}
+#anuncio2 {
+  text-align: left;
+  background-color: #B4D2E7;
+  background-image: url(../pic/bckgr-laptop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#anuncios div#anuncio2 h2 {
+  margin: .5em .8em;
+  color: #A30B37;
+  background-color: rgba(255, 255, 255, .75);
+}
+#anuncio2 h2 span {
+  color: #fff;
+  text-shadow: 1px 1px 5px #999;
+}
+#anuncio2 p {
+  padding: 1em;
+  background-color: rgba(17,17,17,.5);
+  margin: 1em 0 1em 2em;
+  width: 50%;
+}
+div#anuncio2 p:last-child {
+  background-color: transparent;
+  padding: 0;
+}
+div#anuncio2 p:last-child a {
+  color: #A30B37;
+}
+
+/* ----------
+
+MEDIA QUERIES  
+
+---------- */
+
+
+/* navegaciÃ³n principal para celulares TEMP */
+
+  @media screen and (max-width: 640px) {
+    .ddmenu { 
+      flex-wrap: wrap; 
+    }
+    .ddsub {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+
+/* pantallas grandes */
+
+  @media screen and (min-width: 960px) {
+    #topBar {
+      display: flex;
+      justify-content: space-around;
+    }
+    #indexLink {
+      width: 200px;
+    }
+    #index #indxHdr {
+      height: 640px;
+    }
+    section div.renglon {
+      flex-direction: row;
+    }
+    #index #ytpromo div {
+      display: flex;
+    }
+    #index #ytpromo div p {
+      max-width: 50%;
+      font-size: 1.2em;
+      padding: 0 0 0 2em;
+    }
+    div#rotador {
+      max-width: 640px;
+    }
+    #indxInstructores div.renglon {
+      justify-content: space-around;
+    }
+    #indxInstructores div.renglon div {
+      max-width: 30%;
+    }
+    #catalogo div.renglon {
+      justify-content: space-around;
+    }
+    #catalogo div.renglon.div {
+      max-width: 30%;
+    }
+    #anuncios {
+      display: flex;
+      justify-content: space-between;
+    }
+    #anuncios div {
+      max-width: 47%;
+    }
+  }

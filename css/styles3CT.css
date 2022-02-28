@@ -318,11 +318,27 @@ section#catalogo div h3 {
 }
 
 /* plantilla cursos y diplomados */
-
+#plantillaHeader {
+  position: relative;
+}
+div#randomBackground {
+  position: absolute;
+  z-index: 1;
+}
 .cursoHdr {
+  position: relative;
   padding: 4em 1em;
   color: #fff;
+  text-shadow: 1px 1px 1px #222;
   font-size: 150%;
+  z-index: 9999;
+}
+#cursoLogo {
+  max-width: 160px;
+  z-index: 10;
+  float: right;
+  position: relative;
+  top: -30px;
 }
 main#curso {
   padding: 1em 2em 4em 2em;
@@ -437,6 +453,13 @@ div#anuncio2 p:last-child a {
   color: #A30B37;
 }
 
+/* accordion */
+
+#accordion h3 {
+  padding-left: 3em; 
+  margin: 0;
+}
+
 /* ----------
 
 MEDIA QUERIES  
@@ -503,3 +526,4 @@ MEDIA QUERIES
       max-width: 47%;
     }
   }
+

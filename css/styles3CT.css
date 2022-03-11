@@ -360,7 +360,7 @@ main#curso {
   text-transform: uppercase; 
   margin: 2em 0 .25em 0;
 }
-#curso p, #curso li, #curso dt, #curso dd {
+#curso p, #curso li, #curso dt, #curso dd, #curso li li {
   line-height: 2;
   font-size: 1.2em;
   color: #444;

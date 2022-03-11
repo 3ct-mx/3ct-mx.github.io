@@ -364,6 +364,7 @@ main#curso {
   line-height: 2;
   font-size: 1.2em;
   color: #444;
+  color: "red";
   font-weight: 400;
 }
 #curso p strong {

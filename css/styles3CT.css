@@ -360,11 +360,10 @@ main#curso {
   text-transform: uppercase; 
   margin: 2em 0 .25em 0;
 }
-#curso p, #curso li, #curso dt, #curso dd, #curso li li {
+#curso p, #curso li, #curso dt, #curso dd {
   line-height: 2;
   font-size: 1.2em;
   color: #444;
-  font-color: "red";
   font-weight: 400;
 }
 #curso p strong {
@@ -386,6 +385,10 @@ main#curso {
   padding: 0 2em;
 }
 
+
+#curso .temario li {
+  font-size: 1.2rem;
+}
 /* anuncios */
 
 #anuncios {
@@ -527,4 +530,3 @@ MEDIA QUERIES
       max-width: 47%;
     }
   }
-

@@ -71,6 +71,140 @@ section div.renglon a.btn {
   display: inline-flex;
 }
 
+/* Ventana Emergente*/
+section div.renglon aside.ventana-pagos {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 99999999;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+section div.renglon aside.ventana-sesion {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 99999999;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+section div.renglon aside.ventana-horarios {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 99999999;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+section div.renglon a#bntVentana {
+    transition: all 0.15s linear;
+}
+
+section div.renglon aside.ventana-pagos div.abrir-ventana {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    border-radius: 2px;
+    z-index: 9999999;
+}
+section div.renglon aside.ventana-sesion div.abrir-ventana {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    border-radius: 2px;
+    z-index: 9999999;
+}
+section div.renglon aside.ventana-horarios div.abrir-ventana {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    border-radius: 2px;
+    z-index: 9999999;
+}
+
+
+section div.renglon aside.ventana-pagos:target {
+    opacity: 1;
+    top: 0;
+}
+section div.renglon aside.ventana-sesion:target {
+    opacity: 1;
+    top: 0;
+}
+section div.renglon aside.ventana-horarios:target {
+    opacity: 1;
+    top: 0;
+}
+
+section div.renglon aside.ventana-pagos a.cerrar-ventana {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+section div.renglon aside.ventana-sesion a.cerrar-ventana {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+section div.renglon aside.ventana-horarios a.cerrar-ventana {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+
+
+section div.renglon aside.ventana-pagos:target div.abrir-ventana {
+    top: 50px;
+    transition: top 0.35s ease;
+}
+section div.renglon aside.ventana-sesion:target div.abrir-ventana {
+    top: 50px;
+    transition: top 0.35s ease;
+}
+section div.renglon aside.ventana-horarios:target div.abrir-ventana {
+    top: 50px;
+    transition: top 0.35s ease;
+}
+
+section div.renglon aside.ventana-horarios div.abrir-ventana a.btnCerrar {
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    transition: background-color .5s;
+}
+
 /* barra superior */
 
 #topBar {
@@ -124,6 +258,7 @@ section div.renglon a.btn {
   top: 100%; 
   left: 0;
   display: none;
+  z-index:10000;
 }
 .ddsub a { 
   display: block; 
@@ -465,9 +600,7 @@ div#anuncio2 p:last-child a {
 }
 
 /* ----------
-
 MEDIA QUERIES  
-
 ---------- */
 
 
